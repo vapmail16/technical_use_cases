@@ -1,1 +1,39 @@
-# technical_use_cases
+🔧 Technical Use Cases – AI App Experiments
+
+This monorepo contains various AI-driven mini projects focused on **LLMs, automation, and agentic workflows**. Built using modern Python tools like Poetry and DevContainers for consistency and reusability.
+
+---
+
+## 📁 Projects Included
+
+### 1. `aiagents_news/` – Blog Writer Agent
+- GPT-4 based blog generator with NewsAPI enrichment.
+- Human-in-the-loop memory tracking.
+- CLI-powered interface.
+- Ideal for content creators and news bloggers.
+
+### 2. `careerpro/` – Resume Reviewer & Tailor
+- Streamlit UI to review and tailor CVs.
+- Optimized for job applications using OpenAI GPT.
+- Resume-to-job alignment and PDF output.
+
+---
+
+## 🛠️ Setup Instructions
+
+```bash
+# Clone the repository
+git clone https://github.com/vapmail16/technical_use_cases.git
+cd technical_use_cases
+
+# Open in VS Code DevContainer
+code .
+
+# For aiagents_news
+cd aiagents_news
+make install && make run
+
+# For careerpro
+cd ../careerpro
+poetry install
+poetry run streamlit run app.py

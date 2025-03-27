@@ -1,0 +1,11 @@
+{
+  "name": "technical_use_cases",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  "postCreateCommand": "curl -sSL https://install.python-poetry.org | python3 - && export PATH=$HOME/.local/bin:$PATH && cd aiagents_news && poetry install && cd ../careerpro && poetry install",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.python"]
+    }
+  },
+  "remoteUser": "vscode"
+}

@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+*.egg
+*.log
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# VSCode
+.vscode/
+.history/
+
+# Poetry
+poetry.lock
+poetry.toml
+
+# Environment Variables
+.env
+*.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Devcontainer
+.devcontainer/
+
+# Streamlit
+.streamlit/
+
+# Caches & temporary
+*.tmp
+*.bak
+*.swp
+.cache/
+__pycache__/
+.cache/pypoetry/
+.cache/pip/
+
+# Blogs generated
+**/blogs/*.md

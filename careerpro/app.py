@@ -1,7 +1,7 @@
 import streamlit as st
 import os
 from dotenv import load_dotenv
-import openai
+from openai import OpenAI
 import tempfile
 from PyPDF2 import PdfReader
 from reportlab.lib import colors
@@ -14,7 +14,7 @@ from io import BytesIO
 load_dotenv()
 
 # Initialize OpenAI client
-openai.api_key = os.getenv("OPENAI_API_KEY")
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 # ResumePro Prompt
 RESUME_PRO_PROMPT = """
@@ -98,9 +98,8 @@ def create_pdf(text):
     return buffer
 
 def call_openai(system_prompt, user_prompt):
-    """Call OpenAI API with system and user prompts."""
     try:
-        response = openai.ChatCompletion.create(
+        response = client.chat.completions.create(
             model="gpt-4",
             messages=[
                 {"role": "system", "content": system_prompt},

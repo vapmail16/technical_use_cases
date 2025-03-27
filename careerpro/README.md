@@ -1,16 +1,26 @@
-# Technical Use Cases
+# 🧠 CareerPro – CV Review & Tailoring with AI
 
-This repository contains various technical implementations and use cases. Each project is contained in its own directory with its specific documentation.
+CareerPro is a **Streamlit-based AI application** that lets users:
+- Upload a CV and get a professional review.
+- Upload a job description to tailor their CV for that role.
+- Download a well-formatted, ATS-friendly PDF resume.
 
-## Projects
+### 🎯 Features
+- Resume analysis and suggestions using GPT-4.
+- CV tailoring based on job descriptions.
+- Supports PDF and TXT uploads.
+- Download tailored resumes as clean PDFs (via ReportLab).
+- Beautiful Streamlit interface for non-tech users.
 
-### CareerPro
-A Streamlit application that helps users review and tailor their CVs for specific job opportunities using AI. The app provides:
-- CV review with detailed feedback
-- CV tailoring based on job descriptions
-- PDF output with professional formatting
+### ⚙️ Tech Stack
+- Python 3.11
+- Poetry
+- Streamlit
+- OpenAI GPT-4
+- PyPDF2 & ReportLab
+- dotenv
 
-[View CareerPro Documentation](./careerpro/README.md)
-
-## Setup
-Each project has its own setup instructions in its respective directory. 
+### ▶️ Run Instructions
+```bash
+poetry install
+poetry run streamlit run app.py
