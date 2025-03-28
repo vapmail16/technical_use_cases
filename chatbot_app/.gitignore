@@ -1,0 +1,19 @@
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore virtualenvs
+.venv/
+.env
+
+# Ignore VS Code settings (optional)
+.vscode/
+
+# Ignore Poetry files
+poetry.lock
+
+# Ignore Streamlit cache
+.streamlit/
+
+# Ignore generated files or logs
+*.log
