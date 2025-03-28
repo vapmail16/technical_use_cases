@@ -17,6 +17,13 @@ This monorepo contains various AI-driven mini projects focused on **LLMs, automa
 - Optimized for job applications using OpenAI GPT.
 - Resume-to-job alignment and PDF output.
 
+### 3. `chatbot_app/` – LangChain Chatbot with Memory + Tools
+- Streamlit-based chatbot interface.
+- Conversational memory using LangChain.
+- Tool-calling support (DuckDuckGo search).
+- Moderation guardrails via OpenAI's safety API.
+- Token usage tracking.
+
 ---
 
 ## 🛠️ Setup Instructions
@@ -37,3 +44,11 @@ make install && make run
 cd ../careerpro
 poetry install
 poetry run streamlit run app.py
+
+# For chatbot_app
+cd ../chatbot_app/agent
+poetry install
+poetry run streamlit run app.py
+```
+
+---
