@@ -1,0 +1,27 @@
+[project]
+name = "chatoverdocs"
+version = "0.1.0"
+description = "Chat over large documents using LangChain and vector stores"
+authors = [{name = "vapmail16",email = "vapmail16@gmail.com"}]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+openai = "*"
+langchain = "*"
+qdrant-client = "*"
+tiktoken = "*"
+streamlit = "*"
+python-dotenv = "*"
+unstructured = "*"
+langchain-community = "^0.3.20"
+langchain-qdrant = "^0.2.0"
+langchain-openai = "^0.3.11"
+pdfplumber = "^0.11.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+package-mode = false

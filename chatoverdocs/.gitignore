@@ -1,0 +1,35 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# VSCode config
+.vscode/
+
+# Poetry virtual environment (if not managed externally)
+.env
+.env.*
+
+# Uploaded docs
+uploaded_docs/
+*.pdf
+
+# Mac OS junk
+.DS_Store
+
+# Logs
+*.log
+
+# Cache
+.cache/
+*.sqlite3
+
+# Jupyter Notebooks Checkpoints
+.ipynb_checkpoints/
+
+# Pytest cache
+.pytest_cache/
+
+# Python virtual environment folders
+venv/
+env/
