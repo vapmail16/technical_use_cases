@@ -1,4 +1,5 @@
 🔧 Technical Use Cases – AI App Experiments
+==========================================
 
 This monorepo contains various AI-driven mini projects focused on **LLMs, automation, and agentic workflows**. Built using modern Python tools like Poetry and DevContainers for consistency and reusability.
 
@@ -23,6 +24,13 @@ This monorepo contains various AI-driven mini projects focused on **LLMs, automa
 - Tool-calling support (DuckDuckGo search).
 - Moderation guardrails via OpenAI's safety API.
 - Token usage tracking.
+
+### 4. `chatoverdocs/` – Chat Over Large Documents (PDF/TXT)
+- Streamlit interface to upload and query large documents.
+- PDF-aware ingestion using `pdfplumber` for tables.
+- LangChain-powered RAG pipeline with Qdrant as vector store.
+- Uses OpenAI embeddings and GPT models.
+- Helpful for researchers, journalists, and legal document analysis.
 
 ---
 
@@ -49,6 +57,8 @@ poetry run streamlit run app.py
 cd ../chatbot_app/agent
 poetry install
 poetry run streamlit run app.py
-```
 
----
+# For chatoverdocs
+cd ../../chatoverdocs
+poetry install
+poetry run streamlit run app.py
