@@ -32,6 +32,14 @@ This monorepo contains various AI-driven mini projects focused on **LLMs, automa
 - Uses OpenAI embeddings and GPT models.
 - Helpful for researchers, journalists, and legal document analysis.
 
+### 5. `compliance_report_generator/` – Secure AI Agent with Graph + Guardrails
+- Ingests PDF regulations and extracts structured entity relationships into Neo4j.
+- Uses Qdrant for semantic search + memory.
+- Graph-based reasoning + checkpointing with LangGraph.
+- Tool-calling agents and human-in-the-loop validation.
+- Prompt guardrails, PII detection, and unsafe content blocker.
+- Streamlit UI for full document upload → Q&A → insights.
+
 ---
 
 ## 🛠️ Setup Instructions
@@ -62,3 +70,17 @@ poetry run streamlit run app.py
 cd ../../chatoverdocs
 poetry install
 poetry run streamlit run app.py
+
+# For compliance_report_generator
+cd ../compliance_report_generator
+poetry install
+poetry run streamlit run main.py
+
+
+🚀 Built With
+LangChain / LangGraph
+OpenAI / GPT-4 / Claude
+Qdrant / Neo4j
+Streamlit
+Poetry + DevContainers
+
