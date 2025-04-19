@@ -40,6 +40,15 @@ This monorepo contains various AI-driven mini projects focused on **LLMs, automa
 - Prompt guardrails, PII detection, and unsafe content blocker.
 - Streamlit UI for full document upload → Q&A → insights.
 
+### 6. `mcp/` – TweetGen MCP: Blog-to-Twitter Thread Generator
+- Generate 5 tweet-worthy hooks from a long blog.
+- Expand each into a 10-part Twitter thread.
+- Modular backend powered by LangGraph + LangChain tools.
+- Streamlit UI with clean UX.
+- OpenAI GPT-4 backend with CLI and diagnostics.
+- Ideal for authors, influencers, and thought leaders.
+- → [View README](mcp/README.md)
+
 ---
 
 ## 🛠️ Setup Instructions
@@ -76,11 +85,9 @@ cd ../compliance_report_generator
 poetry install
 poetry run streamlit run main.py
 
-
-🚀 Built With
-LangChain / LangGraph
-OpenAI / GPT-4 / Claude
-Qdrant / Neo4j
-Streamlit
-Poetry + DevContainers
-
+# For tweetgen_mcp
+cd ../mcp
+poetry install --no-root
+cp .env.example .env  # Add your OpenAI key
+make run              # Start LangGraph pipeline
+poetry run streamlit run streamlit_app.py  # Launch UI
