@@ -1,0 +1,30 @@
+[project]
+name = "tweetgen-mcp"
+version = "0.1.0"
+description = "Generate Twitter threads from blogs using MCP"
+
+authors = [
+    {name = "vapmail16",email = "vapmail16@gmail.com"}
+]
+package-mode = false  # 👈 Add this line
+
+readme = "README.md"
+requires-python = ">=3.11,<4.0"
+langsmit = "^0.1.7"
+openai = "^1.14.3"
+dependencies = [
+    "openai (>=1.75.0,<2.0.0)",
+    "langgraph (>=0.3.31,<0.4.0)",
+    "streamlit (>=1.44.1,<2.0.0)"
+]
+
+[project.dev-dependencies]
+python-dotenv = "^1.0.1"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+python-dotenv = "^1.1.0"
+

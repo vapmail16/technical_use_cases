@@ -1,0 +1,9 @@
+  - Issue #1: Poetry `init` failed due to invalid flags and curly quotes → Fixed by using interactive mode
+  - Issue #2: OPENAI_API_KEY not set → Fixed by adding `.env` and loading it via `dotenv`
+  - Issue #3: `openai.Model.list()` error after OpenAI v1.0 update → Fixed by using `OpenAI().models.list()`
+  - Issue #4: Poetry `install` failed due to missing project folder → Fixed by adding `package-mode = false`
+  - Issue #5: `make diagnose` failed due to missing `openai` → Fixed with `poetry add openai`
+  - Issue #6: LangSmit not found → Fixed by replacing LangSmit with LangGraph (LangSmit not on PyPI)
+  - Issue #7: `poetry add langgraph` failed → Fixed by updating `python = ">=3.11,<4.0"` in pyproject
+  - Issue #8: `@tool` decorator threw docstring error → Fixed by adding docstrings to tool functions
+  - Issue #9: `StateGraph(dict)` threw unhashable type error → Fixed by using a Pydantic model for state schema

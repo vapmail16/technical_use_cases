@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Poetry
+.poetry/
+poetry.lock
+
+# Environments
+.env
+.venv/
+.envrc
+
+# VSCode/Dev Containers
+.vscode/
+.devcontainer/
+
+# OS files
+.DS_Store
+Thumbs.db
